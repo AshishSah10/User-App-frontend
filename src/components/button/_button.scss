@@ -1,0 +1,19 @@
+.btn-contaier{
+    height: 10%;
+    width: 100%;
+    display: inline-block;
+    .btn{
+      background: #cccc1e;
+      border: none;
+      color: none;
+      border-radius: 24px;
+      padding: 8px;
+      margin: 0px;
+      height: 100em;
+      width: 100em;
+      cursor: pointer;
+      &:hover{
+        background: yellow;
+      }
+    }
+}
