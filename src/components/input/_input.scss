@@ -1,0 +1,25 @@
+.input-container{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    color: white;
+    .input{
+        padding: 8px;
+        border: none;
+        border-radius: 25px;
+        width: 100%;
+        height: 30px;
+        font-weight: bold;
+        font-size: medium;
+        color: white;
+        background: lighten($color:rgb(163, 172, 146), $amount: 0.1);
+        &:focus-within{
+            background: darken($color:rgb(196, 204, 180), $amount:0.4);
+            border: none;
+            box-sizing: border-box;
+        }
+        &:focus-visible{
+            outline: none;
+        }
+    }
+}

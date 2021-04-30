@@ -1,19 +1,33 @@
 .btn-contaier{
-    height: 10%;
-    width: 100%;
     display: inline-block;
+    box-sizing: border-box;
     .btn{
       background: #cccc1e;
       border: none;
-      color: none;
-      border-radius: 24px;
+      color: white;
+      font-weight: bold;
+      border-radius: 25px;
       padding: 8px;
       margin: 0px;
-      height: 100em;
-      width: 100em;
       cursor: pointer;
       &:hover{
-        background: yellow;
+        background: darken($color:#cccc1e, $amount:5);
+        box-shadow: 0px 0px 2px 1px grey;
+      }
+    }
+    .primary{
+      background: blue;
+      &:hover{
+        background: darken($color:blue, $amount:5);
+        box-shadow: 0px 0px 2px 1px grey;
+      }
+    }
+    .secondary{
+      background: rgb(255, 115, 0);
+      &:hover{
+        background: darken($color:rgb(255, 115, 0), $amount:5);
+        box-shadow: 0px 0px 2px 1px grey;
       }
     }
 }
+

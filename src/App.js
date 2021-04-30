@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./styles.css";
 import Button from "./components/button/Button.jsx"
+import Input from "./components/input/Input";
+import {BiSearchAlt} from "react-icons/bi"
 
 export default function App() {
   const [allUser, setAllUser] = useState([])
@@ -15,7 +17,10 @@ export default function App() {
   };
   return (
     <div className="App">
-      <Button value="Add User"/>
+      <Button value="Add User" color="primary"/>
+      <Button value="Add User" color="secondary"/>
+      <Button value="Add User" />
+      <Input placeholder="search here..." type="search"/>
       {/* <Button addUserHandler={addUserHandler}/> */}
       <UserList userList={allUser}/>
     </div>

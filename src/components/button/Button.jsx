@@ -1,7 +1,7 @@
-const Button = ({value, btnClickHandler= () => {}, }) => {
+const Button = ({value, btnClickHandler= () => {}, color="", icon=""}) => {
   return(
     <div className="btn-contaier">
-        <button className="btn" onClick={btnClickHandler}>{value}</button>
+        <button className={`btn ${color}`} onClick={btnClickHandler}>{icon}{value}</button>
     </div>
   )
 }
