@@ -1,3 +1,4 @@
+import {memo} from "react"
 const Button = ({value, btnClickHandler= () => {}, color="", icon=""}) => {
   return(
     <div className="btn-contaier">
@@ -6,4 +7,6 @@ const Button = ({value, btnClickHandler= () => {}, color="", icon=""}) => {
   )
 }
 
-export default Button;
+export default memo(Button, (prevProps, nextProps) => {
+  console.log(prevProps, nextProps)
+})
